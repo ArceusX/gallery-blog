@@ -22,6 +22,8 @@ const App = () => {
   const contentAbout  = content.about[language.code]  || content.about.en;
   const contentEvents = content.events[language.code] || content.events.en;
 
+  document.title = siteInfo.meta.appName;
+
   return (
     <Router>
       <div className="app-wrapper">
@@ -61,7 +63,7 @@ const App = () => {
           appName={siteInfo.meta.appName}
           author={siteInfo.personal.author}
           contact={siteInfo.personal.authorEmail}
-          link={siteInfo.personal.github}
+          github={siteInfo.personal.github}
         />
 
       </div>

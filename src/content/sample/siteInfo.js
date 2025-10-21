@@ -35,8 +35,8 @@ const siteInfo = {
   personal: {
     author: "Triet Lieu",
     authorEmail: "trielieu@gmail.com",
-    github: "https://github.com/ArceusX",
-    address: "36 East 8th Street, New York, NY 10003",
+    github: "https://github.com/ArceusX/gallery-blog",
+    address: "4667 Ocean Blvd, San Diego, CA 92109",
     contactEmail: "PUT_OWN_EMAIL@gmail.com",
   },
 

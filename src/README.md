@@ -18,7 +18,7 @@ Other pages & functionalities facilitate a full blog. See **Features**
 
 ## Live Demo
 
-View the app live here: [React Image Gallery](https://image-gallery-14.netlify.app/)
+View the app live here: [React Image Gallery](https://gallery-blog-14.netlify.app/)
 
 ## Libraries Used
 

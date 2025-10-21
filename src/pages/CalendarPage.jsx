@@ -3,7 +3,7 @@ import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
 import "./css/CalendarPage.css";
 import useLanguageStore from "../store/languageStore";
-import uiTranslations from "../content/live/uiTranslations";
+import uiTranslations from '@content/uiTranslations';
 import { Solar } from "lunar-javascript";
 
 const CalendarPage = ({ events, localeMap }) => {

@@ -1,5 +1,5 @@
 {
-  "name": "image-gallery",
+  "name": "gallery-blog",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -8,6 +8,8 @@
     "dev:sample": "vite --mode sample",
     "dev:live": "vite --mode live",
     "build": "vite build",
+    "build:sample": "vite build --mode sample",
+    "build:live": "vite build --mode live",
     "lint": "eslint .",
     "preview": "vite preview"
   },
