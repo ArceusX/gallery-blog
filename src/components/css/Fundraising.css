@@ -1,0 +1,136 @@
+.fund-container {
+  background: #fff;
+  border-radius: 12px;
+  padding: 16px 20px 12px;
+  max-width: 900px;
+  margin: 12px auto;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: 5px solid #ffe5b4;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Top: mission */
+.fund-top {
+  text-align: center;
+}
+
+.fund-mission {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0 auto;
+}
+
+/* Bottom section: 50/50 split */
+.fund-bottom {
+  display: flex;
+  gap: 20px;
+}
+
+/* Left: image */
+.fund-bottom-left {
+  flex: 1;
+}
+
+.fund-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Right: description + stats + bar + donors + button */
+.fund-bottom-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.fund-text {
+  font-size: 1rem;
+  color: #4b5563;
+  line-height: 1.5;
+}
+
+.fund-stats {
+  font-size: 1rem;
+  color: #4b5563;
+}
+
+.fund-raised {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #2563eb;
+}
+
+.fund-bar {
+  background-color: #e5e7eb;
+  width: 100%;
+  height: 22px;
+  border-radius: 11px;
+  overflow: hidden;
+}
+
+.fund-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #60a5fa, #2563eb);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 8px;
+  color: white;
+  font-weight: 600;
+  font-size: 0.85rem;
+  border-radius: 11px;
+}
+
+.fund-percent {
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.fund-donors {
+  font-size: 0.95rem;
+  color: #6b7280;
+}
+
+.goal-reached {
+  font-weight: 600;
+  color: #16a34a;
+  text-align: center;
+}
+
+/* Donate Now button */
+.fund-donate-btn {
+  margin-top: 12px;
+  padding: 10px 16px;
+  background-color: #2563eb;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.fund-donate-btn:hover {
+  background-color: #1d4ed8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .fund-bottom {
+    flex-direction: column;
+  }
+
+  .fund-bottom-left,
+  .fund-bottom-right {
+    width: 100%;
+  }
+
+  .fund-image {
+    max-height: 200px;
+  }
+}

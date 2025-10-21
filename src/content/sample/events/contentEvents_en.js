@@ -1,0 +1,61 @@
+import { mediaFiles } from '@utils/importMedia';
+
+const contentEvents_en = [
+  {
+    id: 1,
+    date: "2026-01-10",
+    title: "La Jolla Shores Beach Cleanup",
+    description: "Start the year by removing litter along La Jolla Shores and helping local wildlife thrive.",
+    time: "8:00 AM – 11:00 AM",
+    location: "La Jolla Shores Parking Lot",
+    color: "#4CAF50",
+    category: "Cleanup",
+    image: mediaFiles.broom,
+  },
+  {
+    id: 2,
+    date: "2026-02-18",
+    title: "Torrey Pines Coastal Hike",
+    description: "Explore the cliffs and scenic trails while learning about native birds and plants from a guided expert.",
+    time: "9:00 AM – 12:00 PM",
+    location: "Torrey Pines State Reserve",
+    color: "#2196F3",
+    category: "Hike",
+    image: mediaFiles.hiking,
+  },
+  {
+    id: 3,
+    date: "2026-03-07",
+    title: "Mission Bay Wetlands Cleanup",
+    description: "Join volunteers for a hands-on cleanup to protect wetlands and the wildlife that depend on them.",
+    time: "10:00 AM – 1:00 PM",
+    location: "Mission Bay Wetlands Entrance",
+    color: "#FF9800",
+    category: "Cleanup",
+    image: mediaFiles.broom,
+  },
+  {
+    id: 4,
+    date: "2026-04-21",
+    title: "Youth Ocean Awareness Seminar",
+    description: "An interactive seminar for teens on marine pollution, conservation, and practical ways to protect the ocean.",
+    time: "3:00 PM – 5:00 PM",
+    location: "Youth Center, Coastal Room",
+    color: "#9C27B0",
+    category: "Seminar",
+    image: mediaFiles.broom,
+  },
+  {
+    id: 5,
+    date: "2026-05-13",
+    title: "Oceanfront Community Cleanup",
+    description: "Volunteers remove debris from the coastline, keeping the beaches clean and safe for wildlife.",
+    time: "8:00 AM – 11:30 AM",
+    location: "Oceanfront Park",
+    color: "#F44336",
+    category: "Cleanup",
+    image: mediaFiles.broom,
+  },
+];
+
+export default contentEvents_en;
