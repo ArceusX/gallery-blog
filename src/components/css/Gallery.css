@@ -1,5 +1,5 @@
 .gallery-container {
-  width: 690px;
+  width: var(--main-width);
   display: flex;
   flex-direction: column;
   justify-content: center;

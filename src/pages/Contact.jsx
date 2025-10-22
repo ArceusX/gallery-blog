@@ -10,7 +10,7 @@ import './css/Contact.css';
  * @param {string} address - The email address to display.
  * @returns {JSX.Element} The rendered contact form.
  */
-const Contact = ({address, }) => {
+const Contact = ({address, appName }) => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [subject, setSubject] = useState('');
@@ -24,11 +24,15 @@ const Contact = ({address, }) => {
 
     // Wrap message's content and metadata in object to be
     // passed to sendEmail Netlify function as JSON object
-    const data = { name, email, subject, message, address};
+    const data = {
+      name, email, subject, message,
+      address, appName
+    };
 
     // Send request to Netlify server, to be handled by sendEmail
     try {
-      const response = await fetch('/.netlify/functions/sendEmail', {
+      //const response = await fetch('/.netlify/functions/sendSendGrid', {
+      const response = await fetch('/.netlify/functions/sendGmail', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data),
@@ -46,7 +50,7 @@ const Contact = ({address, }) => {
     } catch {
       setStatus('An error occurred. Please try again.');
     }
-  }, [name, email, subject, message, address]);
+  }, [name, email, subject, message]);
 
   const handleNameChange = useCallback((e) => setName(e.target.value), []);
   const handleEmailChange = useCallback((e) => setEmail(e.target.value), []);

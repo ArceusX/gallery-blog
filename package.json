@@ -14,8 +14,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@sendgrid/mail": "^8.1.5",
     "lunar-javascript": "^1.7.5",
+    "nodemailer": "^7.0.9",
     "react": "^19.1.0",
     "react-awesome-reveal": "^4.3.1",
     "react-calendar": "^6.0.0",

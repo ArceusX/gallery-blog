@@ -1,18 +1,19 @@
 
+// Remove comment on sgMail if using SendGrid
 // Need to have run `npm install @sendgrid/mail`
-const sgMail = require('@sendgrid/mail');
+//const sgMail = require('@sendgrid/mail');
 
 // Register with SendGrid, create API Key, and
 // on the Netlify web GUI, add key to environment variables
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
 exports.handler = async (event) => {
-  const { name, email, subject, message, siteName, address, sendGridAddress } = JSON.parse(event.body);
+  const { name, email, subject, message, appName, address, sendGridAddress } = JSON.parse(event.body);
 
   const msg = {
     to: address,   // Inbox address to receive messages
     from: address, // Address registed with SendGrid to send emails
-    subject: `Message for [${siteName}]`,
+    subject: `Message for [${appName}]`,
     text: `Name: ${name}\nEmail: ${email}\nSubject: ${subject}\nMessage: ${message}\n`,
   };
 

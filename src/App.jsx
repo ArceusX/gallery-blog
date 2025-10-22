@@ -52,8 +52,12 @@ const App = () => {
             <Route path="/calendar" element={
               <Calendar events={contentEvents} localeMap={siteInfo.localeMap || { en: "en-US", }}  />} />
             <Route path="/blog" element={<Blog posts = {contentPosts} />} />
-            <Route path="/contact" element={<Contact
-              address={siteInfo.personal.contactEmail} />} />
+            <Route path="/contact" element={
+              <Contact
+              address={siteInfo.personal.contactEmail}
+              appName={siteInfo.meta.appName} 
+
+            />} />
             <Route path="/blog/post/:id" element={<FullBlogPost posts={contentPosts} />} />
           </Routes>
         </Suspense>

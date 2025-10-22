@@ -15,7 +15,7 @@ const siteInfo = {
    * @property {string} icon - The site's icon, displayed in the navbar and footer.
    */
   meta: {
-    appName: "SD Beautify",
+    appName: "Beautify SD",
     icon: appIcon,
     bannerImage: banner,
     bannerText: {
@@ -98,7 +98,7 @@ const siteInfo = {
    */
   fundraising: {
     active: true,
-    mission: "To restore San Diego’s beaches and wetlands.",
+    mission: "To restore San Diego’s beaches and wetlands",
     description: "We’re raising funds to support monthly cleanups, provide cleanup supplies like gloves and reusable bags, and expand our reach to neglected coastal areas. Every donation helps us protect marine life, preserve natural beauty, and inspire community action for a cleaner, healthier coast.",
     image: fundraisingImage,
     raised: 6000,

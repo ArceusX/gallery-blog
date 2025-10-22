@@ -51,6 +51,4 @@ const contentAbout_en = [
   },
 ];
 
-
-
 export default contentAbout_en;
