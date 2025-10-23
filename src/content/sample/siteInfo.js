@@ -4,20 +4,22 @@
  * This file contains the configuration data for the application.
  * Customize these values to configure the site's metadata, navigation, internationalization, and features for a production environment.
  */
-import appIcon from '@assets/dog.png';
-import banner from '@assets/banner.jpg';
-import fundraisingImage from '@assets/clean.png';
+
+import { mediaFiles } from '@utils/importMedia';
 
 const siteInfo = {
+
   /**
    * @property {object} meta - General site metadata.
    * @property {string} appName - The name of the application, displayed in the navbar and footer.
-   * @property {string} icon - The site's icon, displayed in the navbar and footer.
+   * @property {file} icon - The site's icon, displayed in the navbar and footer.
+   * @property {file} banner: Image(s) shown at the top of the home page
+   * @property {string} bannerText: Text overlaid over banner
    */
   meta: {
     appName: "Beautify SD",
-    icon: appIcon,
-    bannerImage: banner,
+    icon: mediaFiles.turtle,
+    banner: [mediaFiles.banner, mediaFiles.coastal, mediaFiles.mission_bay, ],
     bannerText: {
       en: "Cleaning Beaches & Documenting Wildlife in San Diego",
       es: "Cuidando playas y fauna en San Diego",
@@ -100,7 +102,7 @@ const siteInfo = {
     active: true,
     mission: "To restore San Diego’s beaches and wetlands",
     description: "We’re raising funds to support monthly cleanups, provide cleanup supplies like gloves and reusable bags, and expand our reach to neglected coastal areas. Every donation helps us protect marine life, preserve natural beauty, and inspire community action for a cleaner, healthier coast.",
-    image: fundraisingImage,
+    image: mediaFiles.clean,
     raised: 6000,
     goal: 10000,
     nDonors: 26,

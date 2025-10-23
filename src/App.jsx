@@ -41,7 +41,7 @@ const App = () => {
             <Route path="/" element={
               <Home
                 items={contentMedia}
-                image={siteInfo.meta.bannerImage}
+                images={siteInfo.meta.banner}
                 text ={siteInfo.meta.bannerText}
               />
             } />
@@ -51,7 +51,8 @@ const App = () => {
                 fundraising={siteInfo.fundraising} />} />
             <Route path="/calendar" element={
               <Calendar events={contentEvents} localeMap={siteInfo.localeMap || { en: "en-US", }}  />} />
-            <Route path="/blog" element={<Blog posts = {contentPosts} />} />
+            <Route path="/blog" element={
+              <Blog posts = {contentPosts} />} />
             <Route path="/contact" element={
               <Contact
               address={siteInfo.personal.contactEmail}

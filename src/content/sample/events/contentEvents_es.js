@@ -30,7 +30,7 @@ const contentEvents_es = [
     location: "Centro Juvenil",
     color: "#9C27B0",
     category: "Juventud",
-    image: mediaFiles.dog,
+    image: mediaFiles.turtle,
   },
   {
     id: 4,
@@ -52,7 +52,7 @@ const contentEvents_es = [
     location: "Santuario Principal",
     color: "#F44336",
     category: "Servicio",
-    image: mediaFiles.dog,
+    image: mediaFiles.turtle,
   },
 ];
 

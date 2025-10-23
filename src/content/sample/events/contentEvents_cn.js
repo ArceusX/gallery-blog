@@ -31,7 +31,7 @@ const contentEvents_cn = [
     location: "青年中心",
     color: "#9C27B0",
     category: "青年",
-    image: mediaFiles.dog,
+    image: mediaFiles.turtle,
   },
   {
     id: 4,
@@ -53,7 +53,7 @@ const contentEvents_cn = [
     location: "主圣殿",
     color: "#F44336",
     category: "崇拜",
-    image: mediaFiles.dog,
+    image: mediaFiles.turtle,
   },
 ];
 
